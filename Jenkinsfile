@@ -13,8 +13,6 @@ pipeline {
                 ''' 
             }
         }
-
-		export PATH=$PATH:$M2_HOME/bin
         stage ('Build') {
             steps {
                 echo 'This is a minimal pipeline.'
