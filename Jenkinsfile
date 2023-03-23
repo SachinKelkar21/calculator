@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("compile") {
 			steps {
-			    sh "mvn springboot:run"
+			    sh "mvn clean package"
 			}	                   
         }
         stage("Unit test") {
